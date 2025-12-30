@@ -92,9 +92,6 @@ class Program
 
     static void Snow() 
     {
-        // ------------------------------
-        // KAR YAĞIŞI EKLENECEK KISIM
-        // ------------------------------
         Random rand = new Random();
         int width = Console.WindowWidth;
         int height = 30; // kar yükseklik bölgesi
@@ -140,7 +137,7 @@ class Program
     }
     static void PrintTitle()
     {
-        Console.ForegroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine(@"
              $$$$$$\    $$\           $$$$$$$\  $$\        $$$$$$\  $$\                  $$\     
             $$  __$$\   $$ |          $$  __$$\ \__|      $$  __$$\ $$ |                 $$ |    
@@ -161,19 +158,19 @@ class Program
 
         // Ağacın dalları (yeşil)
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("        *                               *        ");
-        Console.WriteLine("       ***                             ***       ");
-        Console.WriteLine("      *****                           *****      ");
-        Console.WriteLine("     *******   " +  firstLine + "    *******     ");
-        Console.WriteLine("    *********  " + secondLine + "   *********    ");
-        Console.WriteLine("   ***********" + thirdLine +   "  ***********   ");
-        Console.WriteLine("  *************                   *************  ");
-        Console.WriteLine(" ***************                 *************** ");
+        Console.WriteLine("                                      *                               *        ");
+        Console.WriteLine("                                     ***                             ***       ");
+        Console.WriteLine("                                    *****                           *****      ");
+        Console.WriteLine("                                   *******   " +  firstLine + "    *******     ");
+        Console.WriteLine("                                  *********  " + secondLine + "   *********    ");
+        Console.WriteLine("                                 ***********" + thirdLine +   "  ***********   ");
+        Console.WriteLine("                                *************                   *************  ");
+        Console.WriteLine("                               ***************                 *************** ");
 
         // Gövde (kahverengi)
         Console.ForegroundColor = ConsoleColor.DarkYellow;
-        Console.WriteLine("       |||                             |||         ");
-        Console.WriteLine("       |||                             |||         ");
+        Console.WriteLine("                                     |||                             |||         ");
+        Console.WriteLine("                                     |||                             |||         ");
 
         Console.ResetColor();
 
@@ -181,7 +178,7 @@ class Program
 
 
         Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("\n============ Bir Latif ALTAY Ürünüdür =================\n");
+        Console.WriteLine("\n================================================== Bir Latif ALTAY Ürünüdür ============================================\n");
         Console.ResetColor();
     }
 
